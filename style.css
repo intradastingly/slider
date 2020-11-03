@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container > img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container .show {
+    opacity: 1;
+}
