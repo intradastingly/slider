@@ -8,7 +8,7 @@ function main(){
 
 /** starts the animation with set interval */
 function startSlideShowAnimation(){
-    setInterval(changeActiveImage, 2000);
+    setInterval(changeActiveImage, 4000);
     
 }
 
@@ -21,10 +21,15 @@ function changeActiveImage(){
             images[i].classList.remove('show');
 
             //makes sure that we go back to zero when index passes images length. 
-            let nextIndex = i + 1;
-            if (nextIndex >= images.length){
-                nextIndex = 0;
-            }
+
+            //modulus 
+            let nextIndex = (i + 1) % images.length;
+
+
+            //if (nextIndex >= images.length){
+              //  nextIndex = 0;
+            //}
+
             images[nextIndex].classList.add('show');
             break;
         }

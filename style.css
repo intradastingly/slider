@@ -1,15 +1,15 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-}
 
+
+a {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1rem;
+}
 
 .container {
     position: relative;
@@ -31,4 +31,43 @@ body {
 
 .container .show {
     opacity: 1;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.sidebar > ul > li > span{
+    padding: 1rem;
+}
+
+.sidebar > ul > li {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    background-color: rgb(102, 102, 102)21, 117, 117);
+    width: 0;
+    height: 50%;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.white {
+    color: white;
+}
+
+.user > img {
+    height: 2.5rem;
+    padding: 1rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
 }
