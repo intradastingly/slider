@@ -4,7 +4,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+body, html {
+    height: 100%;
+    background-color: black;
+}
 
 a {
     font-family: 'Roboto', sans-serif;
@@ -33,6 +36,7 @@ a {
     opacity: 1;
 }
 
+
 .center {
     display: flex;
     flex-direction: column;
@@ -46,28 +50,44 @@ a {
 .sidebar > ul > li {
     display: flex;
     align-items: center;
+    white-space: nowrap;
+}
+
+li:hover {
+    margin: 0rem -1rem 0rem ;
+    background-color:rgba(172, 172, 172, 0.1);
+    border-right: solid 2px red;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .sidebar {
-    background-color: rgb(102, 102, 102)21, 117, 117);
-    width: 0;
-    height: 50%;
+    padding: 1rem 2rem 0rem 2rem;
+    height: 100%;
     z-index: 1;
     position: fixed;
     display: flex;
+    align-content: center;
     justify-content: space-between;
+    background-color:rgb(70, 70, 70, 0.8);
 }
 
 .white {
     color: white;
+    padding: 1rem;
 }
 
 .user > img {
     height: 2.5rem;
     padding: 1rem;
+    
 }
 
 .user {
     display: flex;
     align-items: center;
+}
+
+.full {
+    height: 400rem;
 }
